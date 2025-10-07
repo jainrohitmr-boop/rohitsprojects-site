@@ -1,12 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Drive Link Exporter RJ</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drive Link Exporter – Export Google Drive File Links to CSV</title>
+  <meta name="description" content="Drive Link Exporter is a Chrome extension that lets you export Google Drive file metadata (IDs, names, and links) from a selected folder into a CSV file." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;margin:0;color:#0f172a;background:#fff}
+    header,footer{padding:24px 16px;max-width:960px;margin:0 auto}
+    header h1{margin:0 0 8px}
+    nav a{margin-right:16px;color:#2563eb;text-decoration:none}
+    main{max-width:960px;margin:24px auto;padding:0 16px;line-height:1.6}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-bottom:24px}
+    h2{color:#2563eb}
+  </style>
 </head>
 <body>
-  <h1>Welcome to Drive Link Exporter RJ</h1>
-  <p>This site hosts the app homepage and required policies.</p>
-  <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+<header>
+  <h1>Drive Link Exporter</h1>
+  <p><strong>Purpose:</strong> Drive Link Exporter is a Chrome extension that helps users quickly export Google Drive file metadata (such as file name, ID, and sharing links) from a selected folder into a CSV file for easier organization and sharing.</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/support.html">Support</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Install the Drive Link Exporter Chrome extension.</li>
+      <li>Open the extension and paste the URL of a Google Drive folder you have access to.</li>
+      <li>Authorize the extension via Google OAuth (read-only access).</li>
+      <li>Click <strong>Export</strong> to download a CSV containing file names, IDs, and links.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Data & Privacy</h2>
+    <p>Drive Link Exporter requests read-only access to Google Drive metadata through <code>https://www.googleapis.com/auth/drive.readonly</code>.  
+    The extension never reads or stores file content. All processing happens locally in your browser.  
+    See our <a href="/privacy.html">Privacy Policy</a> for full details.</p>
+  </section>
+
+  <section class="card">
+    <h2>Why Use Drive Link Exporter?</h2>
+    <ul>
+      <li>Save time when organizing large Google Drive folders.</li>
+      <li>Instantly generate shareable lists of files with links.</li>
+      <li>All data stays private — no server-side processing.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <small>© <span id="y"></span> Drive Link Exporter • <a href="/support.html">Contact</a></small>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
